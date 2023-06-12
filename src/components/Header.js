@@ -1,16 +1,16 @@
 import Button from "./Button";
 
-const Header = ({title}) => {
+const Header = ({ title }) => {
   return (
     <header className="container">
       <div className="header">
         <h1>{title}</h1>
-        <Button color= 'blue' text="Hello" />
+        <Button color="green" text="Add" />
+        
       </div>
     </header>
   );
-}
-
+};
 
 //!   CSS in JS
 // const titlteStyle = {
@@ -18,7 +18,5 @@ const Header = ({title}) => {
 //   display: "flex",
 //     justifyContent: "center"
 // };
- 
-export default Header
 
-
+export default Header;
