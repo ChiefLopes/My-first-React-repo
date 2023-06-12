@@ -1,16 +1,23 @@
 import React from "react";
+import Header from "./components/Header";
 
 
- function Apply() {
-   const styles = {
-     color: "blue",
-     fontSize: "35px",
-     display: "flex",
-     justifyContent: "center",
-     fontWeight: "bold",
-   };
+// function App() {
+  
+//   return (
+//     <div className="App">
+//      <Header/>
+//   </div>)
+// }
 
-   return <div style={styles}>My first React project</div>;
- }
-export default Apply;
+class App extends React.Component {
+  render() {
+  return h1}
+
+}
+
 // export default App;
+ 
+
+
+
