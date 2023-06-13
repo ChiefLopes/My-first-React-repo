@@ -8,7 +8,7 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: "DOctor's appointment",
+      text: "Doctor's appointment",
       day: "feb, 5th at 2:30pm",
       reminder: "true",
     },
@@ -25,16 +25,25 @@ function App() {
       reminder: "true",
     },
   ]);
+
+  // Delete Task Function
+  const deleteTask = (id) => {
+    console.log("delete", id);
+  };
+
   return (
     <div className="container">
       <Header />
-      <Tasks tasks ={tasks} />
+      <Tasks tasks={tasks} onDelete={deleteTask} />
     </div>
   );
 }
+
+
 // declaring props
 Header.defaultProps = {
   title: "Task Tracker",
 };
+
 
 export default App;
