@@ -1,22 +1,40 @@
+import { useState } from "react";
 import React from "react";
 import Header from "./components/Header";
-import "./index.css";
-
+import Tasks from "./components/Tasks";
+// import "./index.css";
 
 function App() {
-  
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      text: "DOctor's appointment",
+      day: "feb, 5th at 2:30pm",
+      reminder: "true",
+    },
+    {
+      id: 2,
+      text: "Meeting At School",
+      day: "feb, 6th at 1:30pm",
+      reminder: "true",
+    },
+    {
+      id: 3,
+      text: "Food Shopping",
+      day: "feb, 6th at 1:30pm",
+      reminder: "true",
+    },
+  ]);
   return (
-    <div className="App">
-     <Header/>
-  </div>)
+    <div className="container">
+      <Header />
+      <Tasks tasks ={tasks} />
+    </div>
+  );
 }
-  // declaring props
+// declaring props
 Header.defaultProps = {
-    title: "Task Tracker"}
-
-
+  title: "Task Tracker",
+};
 
 export default App;
-
-
-
