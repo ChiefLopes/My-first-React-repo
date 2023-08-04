@@ -2,7 +2,9 @@ import { useState } from "react";
 import React from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+
 // import "./index.css";
+
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -49,6 +51,7 @@ function App() {
     </div>
   );
 }
+
 
 // declaring props
 Header.defaultProps = {
